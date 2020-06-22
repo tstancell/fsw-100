@@ -1,0 +1,62 @@
+.main-headline {
+    color: darkgreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;   
+}
+
+#sub-headline {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#content1::after {
+    content: "\a";
+    white-space: pre;
+}
+
+#content::before {
+    content: "\a";
+    white-space: pre;
+}
+
+    
+.content3::after {
+    content: "\a";
+    white-space: pre;
+}
+
+.textwrapleft {
+    float: left;
+    margin: 15px
+    
+}
+
+.paragraph-one {
+    position: relative;
+    margin: 70px;
+    height: 50;
+} 
+
+.paragraph-three {
+    position: relative;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.content3 {
+    text-transform: uppercase;
+}
+
+.remove-underline a {
+    text-decoration: none;
+}
+
+.space-content:hover {
+    content: "\a";
+    white-space: pre;
+    text-decoration: underline;
+}
+
+.space-content {
+    line-height: 50px
+}
