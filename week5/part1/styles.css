@@ -1,0 +1,107 @@
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: repeat(4, 50px);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
+    grid-template-areas: 
+    "cell-1"
+    "cell-2"
+    "cell-3"
+    "cell-4"
+    "cell-5"
+    "cell-6"
+    "cell-7"
+    "cell-8"
+  }
+
+
+  @media only screen and (min-width: 500px)  {
+    .container {
+
+        grid-template-columns: 20% auto;
+        grid-template-areas:
+    "cell-1   cell-1"
+        "cell-2  cell-2"
+        "cell-3 cell-3"
+        "cell-4  cell-4"
+        "cell-5  cell-5"
+        "cell-6  cell-6"
+        "cell-7 cell-7"
+        "cell-8 cell-8";
+    }
+    }
+
+    @media only screen and (min-width: 600px)   {
+        .container {
+      grid-gap: 20px;
+            grid-template-columns: 120px auto 120px;
+            grid-template-areas:
+      "cell-1  cell-1  cell-1"
+            "cell-2 cell-2 cell-2"
+            "cell-2  cell-2  cell-2"
+            "cell-3 cell-3 cell-3"
+            "cell-4 cell-4 cell-4"
+            "cell-5 cell-5 cell-5"
+            "cell-6 cell-6 cell-6"
+            "cell-7 cell-7 cell-7"
+            "cell-8 cell-8 cell-8";
+            max-width: 600px;
+        }
+    }
+
+  
+  .cell {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    padding: 4rem;
+}
+  
+  .cell-1 {
+    background: #F5C6D6;
+    grid-row: 1;
+    grid-column: 1/4;
+    grid-column: span 4; 
+  }
+
+  .cell-2 {
+    background: #EE2E84;
+  }
+    
+
+  .cell-3 {
+    background: #EE2E84;
+    grid-column-gap: 10px;
+  }
+  .cell-4 {
+    background: #EE2E84;
+    grid-column-gap: 50px;
+  }
+  
+  .cell-5 {
+      background-color: #EE2E84;
+      grid-gap: 50px;
+  }
+
+  .cell-6 {
+      background-color: #85CFD8;
+      grid-column: span 2;
+      grid-row: 3;
+  }
+
+  .cell-7 {
+      background-color: #85CFD8;
+      grid-column: span 2;
+  }
+
+  .cell-8 {
+      background-color: #8DC63F;
+      grid-column: span 3;
+  }
+
+  .cell-9 {
+      background-color: #E76E34;
+  }
+  
