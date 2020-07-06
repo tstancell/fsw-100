@@ -5,18 +5,16 @@ body {
   .container {
           display: grid;
           grid-gap: 10px;
-          grid-template-columns: [col] 100px [col] 100px [col] 100px [col] 100px  ;
+          grid-template-columns: [col] 120px [col] 120px [col] 120px [col] 120px  ;
           grid-template-rows: [row] auto [row] auto [row] auto [row] auto;
           background-color: #fff;
-          color: #444;
-          
       }
   
       .box {
           background-color: #444;
           color: #fff;
-          border-radius: 5px;
-          padding: 20px;
+          border-radius: 10px;
+          padding: 50px;
           font-size: 150%;
       }
 
@@ -38,12 +36,19 @@ body {
     .d {
         grid-column: col 2 / span 3 ;
         grid-row: row 2 ;
-        background-color: lightblue;
+        background-color: lightblue;;
     }
 
     .e {
         grid-column: col / span 4;
-        grid-row: row 3;
+        grid-row: row 4;
         background-color: wheat;
     }
 
+    @media screen and (min-width: 600px) {
+        .container { grid-template-columns: auto; }
+      }
+    
+    @media screen and (max-width: 500px) {
+        .container { grid-template-columns: auto; }
+      }

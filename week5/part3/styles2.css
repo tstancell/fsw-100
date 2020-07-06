@@ -22,10 +22,12 @@ body {
           grid-area: footer;
       }
 
-
+    
       .container {
         background-color: lightskyblue;
         color: lightyellow;
+        display: grid;
+        grid-gap: 50px;
     }
 
   .container {
@@ -39,10 +41,10 @@ body {
      "footer"
   }
 
-  @media only screen and (min-width: 768px)  {
+  @media (min-width: 900px)  {
     .container {
 
-        grid-template-columns: 30% auto;
+        grid-template-columns: 50% auto;
         grid-template-areas:
     "header   header"
         "sidebar  content"
@@ -51,10 +53,9 @@ body {
     }
     }
 
-    @media only screen and (min-width: 600px)   {
+    @media (min-width: 600px)   {
         .container {
-      grid-gap: 20px;
-            grid-template-columns: 120px auto 120px;
+            grid-template-columns: 100px auto 100px; 
             grid-template-areas:
       "header  header  header"
             "sidebar content sidebar2"
